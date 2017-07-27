@@ -1,0 +1,105 @@
+html body {
+  margin: 0 auto;
+  max-width: 7.2rem;
+}
+
+html body #head .scanning {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.28rem;
+  margin: auto;
+}
+
+html body #head .scanning > img {
+  width: 0.49rem;
+}
+
+html body #head .searchs {
+  width: 5.12rem;
+  height: 0.71rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.04rem;
+  margin: auto;
+  background-color: white;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+  border-radius: 0.35rem;
+}
+
+html body #head .searchs .search,
+html body #head .searchs .talking,
+html body #head .searchs > input {
+  float: left;
+  height: 100%;
+}
+
+html body #head .searchs .search {
+  width: 0.93rem;
+  background-color: #e8c93b;
+  border-radius: 0.35rem 0 0 0.35rem;
+}
+
+html body #head .searchs .search > img {
+  width: 0.27rem;
+}
+
+html body #head .searchs > input {
+  color: #cacac8;
+  font-size: 0.24rem;
+  width: 3.20rem;
+}
+
+html body #head .searchs .talking {
+  float: right;
+  width: 0.88rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+  background-color: white;
+}
+
+html body #head .searchs .talking > img {
+  width: 0.26rem;
+}
+
+html body #head .msg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.27rem;
+  margin: auto;
+}
+
+html body #head .msg > img {
+  width: 0.52rem;
+}
+
+html body #footer {
+  height: 1.1rem;
+  width: 7.2rem;
+  background-color: #52d5e9;
+}
+
+html body #footer > ul {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+html body #footer > ul > li {
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+
+html body #footer > ul > li > a {
+  color: #ffffff;
+  font-size: 0.28rem;
+}
+
+html body #footer > ul > li.active {
+  color: #fecc32;
+}

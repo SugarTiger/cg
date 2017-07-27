@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* 样式初始化
+--------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  -webkit-tap-highlight-color: transparent;
+  /*IOS禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*IOS禁止链接长按弹出选项菜单*/
+}
+
+nav,
+footer,
+section,
+header,
+article {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  -webkit-tap-highlight-color: transparent;
+  /*禁止链接高亮*/
+  -webkit-touch-callout: none;
+  /*禁止链接长按弹出选项菜单*/
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333333;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  outline: none;
+  padding-left: 0.08rem;
+}
+
+hr {
+  border-color: #ddd;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #cacac8;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cacac8;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cacac8;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cacac8;
+}
+
+/* 主体结构
+--------------------------------------------------*/
+html body {
+  margin: 0 auto;
+  max-width: 7.2rem;
+}
+
+html body #head {
+  height: 0.96rem;
+  width: 7.2rem;
+  background-color: #52d5e9;
+  position: relative;
+}

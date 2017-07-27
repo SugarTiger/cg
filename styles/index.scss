@@ -1,0 +1,97 @@
+@mixin border-radius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -ms-border-radius: $size;
+    -o-border-radius: $size;
+    border-radius: $size;
+}
+
+html {
+    body {
+        margin: 0 auto;
+        max-width: 7.2rem;
+        #head {
+            .scanning {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0.28rem;
+                margin: auto;
+                >img {
+                    width: 0.49rem;
+                }
+            }
+            .searchs {
+                width: 5.12rem;
+                height: 0.71rem;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 1.04rem;
+                margin: auto;
+                background-color: white;
+                @include border-radius(0.35rem);
+                .search,
+                .talking,
+                >input {
+                    float: left;
+                    height: 100%;
+                }
+                .search {
+                    width: 0.93rem;
+                    background-color: #e8c93b;
+                    border-radius: 0.35rem 0 0 0.35rem;
+                    >img {
+                        width: 0.27rem;
+                    }
+                }
+                >input {
+                    color: #cacac8;
+                    font-size: 0.24rem;
+                    width: 3.20rem;
+                }
+                .talking {
+                    float: right;
+                    width: 0.88rem;
+                    border-radius: 0 0.35rem 0.35rem 0;
+                    background-color: white;
+                    >img {
+                        width: 0.26rem;
+                    }
+                }
+            }
+            .msg {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0.27rem;
+                margin: auto;
+                >img {
+                    width: 0.52rem;
+                }
+            }
+        }
+        #footer {
+            height: 1.1rem;
+            width: 7.2rem;
+            background-color: #52d5e9;
+            >ul {
+                width: 100%;
+                overflow: hidden;
+                height: 100%;
+                >li {
+                    width: 25%;
+                    float: left;
+                    height: 100%;
+                    >a {
+                        color: #ffffff;
+                        font-size: 0.28rem;
+                    }
+                }
+                >li.active {
+                    color: #fecc32;
+                }
+            }
+        }
+    }
+}
