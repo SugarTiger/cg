@@ -69,22 +69,33 @@ button {
     background-color: transparent;
     outline: none;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #cacac8;
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #cacac8;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #cacac8;
-   opacity:  1;
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #cacac8;
+    opacity: 1;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #cacac8;
-   opacity:  1;
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #cacac8;
+    opacity: 1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #cacac8;
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cacac8;
 }
+
+
 /* 主体结构
 --------------------------------------------------*/
+
 html {
     body {
         margin: 0 auto;
@@ -94,6 +105,80 @@ html {
             width: 7.2rem;
             background-color: #52d5e9;
             position: relative;
+        }
+        #footer {
+            height: 1.1rem;
+            width: 7.2rem;
+            background-color: #52d5e9;
+            >ul {
+                width: 100%;
+                overflow: hidden;
+                height: 100%;
+                >li {
+                    width: 25%;
+                    float: left;
+                    height: 100%;
+                    >a {
+                        font-size: 0.28rem;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        >img{
+                            position: absolute;
+                            top: 0.17rem;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                        >span {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom:0.05rem;
+                            margin: auto;
+                            text-align: center;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                >li:nth-of-type(1){
+                    >a{
+                        >img{
+                            width:0.5rem;
+                        }
+                    }
+                }
+                >li:nth-of-type(2){
+                    >a{
+                        >img{
+                            width: 0.47rem;
+                        }
+                    }
+                }
+                >li:nth-of-type(3){
+                    >a{
+                        >img{
+                            width: 0.34rem;
+                        }
+                    }
+                }
+                >li:nth-of-type(4){
+                    >a{
+                        >img{
+                            width: 0.35rem;
+                        }
+                    }
+                }
+                >li.active {
+                    background-color: #0a7d8e;
+                    >a {
+                        >span {
+                            color: #fecc32;
+                        }
+                    }
+                }
+            }
         }
     }
 }

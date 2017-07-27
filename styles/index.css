@@ -77,29 +77,59 @@ html body #head .msg > img {
   width: 0.52rem;
 }
 
-html body #footer {
-  height: 1.1rem;
+html body .banners {
   width: 7.2rem;
-  background-color: #52d5e9;
-}
-
-html body #footer > ul {
-  width: 100%;
+  padding-top: 44.44%;
+  position: relative;
   overflow: hidden;
-  height: 100%;
 }
 
-html body #footer > ul > li {
-  width: 25%;
+html body .banners .imgbox {
+  width: 1000%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+html body .banners .imgbox li {
+  width: 10%;
   float: left;
-  height: 100%;
 }
 
-html body #footer > ul > li > a {
-  color: #ffffff;
-  font-size: 0.28rem;
+html body .banners .imgbox li a {
+  display: block;
+  width: 100%;
 }
 
-html body #footer > ul > li.active {
-  color: #fecc32;
+html body .banners .imgbox li a img {
+  width: 100%;
+}
+
+html body .banners .point {
+  position: absolute;
+  bottom: 0.22rem;
+  overflow: hidden;
+  width: 0.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html body .banners .point li {
+  width: 0.08rem;
+  height: 0.08rem;
+  -webkit-border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  -ms-border-radius: 0.04rem;
+  -o-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+  float: left;
+  margin: 0.05rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+html body .banners .point li:hover, html body .banners .point .active {
+  background-color: #e8c93b;
 }

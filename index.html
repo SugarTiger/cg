@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles/public.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
     <header id="head">
         <button class='scanning'>
@@ -26,14 +28,28 @@
             <img src="images/index/msg_icon.png" alt="">
         </button>
     </header>
+    <div class="banners">
+        <ul class="imgbox">
+            <li><a href="#"><img src="images/index/banner1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/index/banner2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/index/banner3.jpg" alt=""></a></li>
+        </ul>
+        <ul class="point">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <footer id="footer">
         <ul>
-            <li><a href="#">主页</a></li>
-            <li><a href="#">购物车</a></li>
-            <li><a href="#">我的订单</a></li>
-            <li><a href="#">我的</a></li>
+            <li class="active"><a href="index.html"><img src="images/public/home_on.png" alt=""><span>主页</span></a></li>
+            <li><a href="#"><img src="images/public/car.png" alt=""><span>购物车</span></a></li>
+            <li><a href="#"><img src="images/public/order.png" alt=""><span>我的订单</span></a></li>
+            <li><a href="#"><img src="images/public/user.png" alt=""><span>我的</span></a></li>
         </ul>
     </footer>
+    <script src="js/index.js"></script>
     <script src="js/public.js"></script>
 </body>
+
 </html>
