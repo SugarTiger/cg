@@ -107,10 +107,15 @@ html {
             background-color: #52d5e9;
             position: relative;
         }
+        #middle{
+            padding-bottom: 1.1rem;
+        }
         #footer {
             height: 1.1rem;
             width: 7.2rem;
             background-color: #52d5e9;
+            position: fixed;
+            bottom:0;
             >ul {
                 width: 100%;
                 overflow: hidden;

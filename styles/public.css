@@ -107,10 +107,16 @@ html body #head {
   position: relative;
 }
 
+html body #middle {
+  padding-bottom: 1.1rem;
+}
+
 html body #footer {
   height: 1.1rem;
   width: 7.2rem;
   background-color: #52d5e9;
+  position: fixed;
+  bottom: 0;
 }
 
 html body #footer > ul {
