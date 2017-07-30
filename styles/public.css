@@ -107,6 +107,28 @@ html body #head {
   position: relative;
 }
 
+html body #head .back {
+  position: absolute;
+  left: 0.18rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99;
+}
+
+html body #head .back > img {
+  display: block;
+  width: 0.29rem;
+}
+
+html body #head > h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 0.36rem;
+  line-height: 0.96rem;
+  text-align: center;
+}
+
 html body #middle {
   padding-bottom: 1.1rem;
 }

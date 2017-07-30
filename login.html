@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="styles/public.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <header id="head">
+        <button class='back'>
+            <img src="images/public/back.png" alt="后退">
+        </button>
+        <h1>登录</h1>
+    </header>
+    <div id="middle">
+        <form class="login">
+            <input type="text" name="user" placeholder="会员号：" class="user">
+            <input type="password" name="pwd" placeholder="密码：" class="pwd">
+            <div>
+                <input type="text" name="ycode" placeholder="验证码：">
+                <img src="images/login/ycode.png" alt="验证码">
+            </div>
+            <input type="submit" value="登录" class="sub">
+        </form>
+        <p>
+            <a href="register.html">注册账号</a>
+            <a href="javascript:void(0)">手机登录</a>
+        </p>
+        <ul>
+            <li><a href="javascript:void(0)"><img src="images/login/qq.png" alt="qq登录"></a></li>
+            <li><a href="javascript:void(0)"><img src="images/login/wx.png" alt="微信登录"></a></li>
+            <li><a href="javascript:void(0)"><img src="images/login/wb.png" alt="微博登录"></a></li>
+        </ul>
+        <h3>其它方式登陆</h3>
+    </div>
+    <script src="js/public.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+</body>
+
+</html>
