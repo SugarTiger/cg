@@ -14,13 +14,14 @@
     $image = imagecreatetruecolor($width,$height);
     $bg_color = imagecolorallocate($image,233,233,233);
     imagefilledrectangle($image,0,0,$width,$height,$bg_color);
+	//画验证码
     for($i=0;$i<$num;$i++){
-		$txt_color = imagecolorallocate($image, mt_rand(0, 120), mt_rand(0, 120), mt_rand(0, 120));
-		$ang = mt_rand(-30, 30);
+		$txt_color = imagecolorallocate($image,mt_rand(0,120),mt_rand(0,120),mt_rand(0,120));
+		$ang = mt_rand(-30,30);
 		imagettftext($image, $size, $ang, ($i+1)*$space, $size + 5, $txt_color, 'c:\WINDOWS\Fonts\consola.ttf', $code[$i]);
 	}
 	//干扰线
-	for ($i = 0; $i < 5; $i++) {
+	for($i=0;$i<5;$i++){
 		$font_color = imagecolorallocate($image, mt_rand(0, 255), mt_rand(0, 255), mt_rand(0, 255));
 		imagearc($image, mt_rand(-$width, $width), mt_rand(-$height, $height), mt_rand(30, $width * 2), mt_rand(20, $height * 2), mt_rand(0, 360), mt_rand(0, 360), $font_color);
 	}
@@ -29,15 +30,8 @@
 		$font_color = imagecolorallocate($image, mt_rand(0, 255), mt_rand(0, 255), mt_rand(0, 255));
 		imagesetpixel($image, mt_rand(0, $width), mt_rand(0, $height), $font_color);
 	}
-	
-	
-	//生成图片
 	imagepng($image);
-	//销毁图片
 	imagedestroy($image);
-	
-	//使用session保存验证码
 	session_start();
 	$_SESSION["code"] = implode("", $code);
-
 ?>
