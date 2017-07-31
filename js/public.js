@@ -10,3 +10,9 @@ windowSize();
 window.onresize = function () {
     windowSize();
 };
+function changeVCode() {
+    var imgw = codeimg.clientWidth;
+    var imgh = codeimg.clientHeight;
+    var time = new Date().getTime();
+    codeimg.src = "admin/code.php?&n=4&s=20&w=" + imgw + "&h=" + imgh + "&time=" + time;
+}

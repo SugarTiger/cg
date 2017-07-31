@@ -1,15 +1,20 @@
 var reg = document.querySelector('.reg');
 var codeimg = reg.querySelector('.code_img');
+var checkbox = reg.querySelector('.checkbox');
+var inputbox = checkbox.children[0];
+checkbox.onclick = function(){
+    var className = this.className;
+    if(className.indexOf('checked')===-1){
+        this.className = className+" checked";
+        inputbox.setAttribute('checked',true);
+    }else{
+        this.className = 'checkbox';
+        inputbox.removeAttribute('checked');
+    }
+};
 
 // 验证码
 codeimg.onclick = changeVCode;
-
-function changeVCode() {
-    var imgw = codeimg.clientWidth;
-    var imgh = codeimg.clientHeight;
-    var time = new Date().getTime();
-    codeimg.src = "admin/code.php?&n=4&s=20&w=" + imgw + "&h=" + imgh + "&time=" + time;
-}
 changeVCode();
 
 // 提交
@@ -44,6 +49,11 @@ sub.onclick = function (event) {
         rpwd.focus();
         return false;
     }
+    if(!inputbox.hasAttribute('checked')){
+        alert('请同意服务协定和隐私条款');
+        return false;
+    }
+
     ajaxFn('get', 'admin/vcode.php', 'code=' + cVal, function (data) {
         var iscode;
         if (JSON.parse(data).result === 'success') {
@@ -64,6 +74,7 @@ sub.onclick = function (event) {
             if (resule.type === 'success') {
                 localStorage.setItem("cguserinfo",JSON.stringify(resule.userinfo));
                 alert('注册成功');
+                window.location.href = 'login.html';
             } else if(resule.code === '0') {
                 alert('用户已存在');
             }
