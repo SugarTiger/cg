@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="styles/public.css">
+    <link rel="stylesheet" href="styles/reg.css">
+</head>
+
+<body>
+    <header id="head">
+        <button class='back'>
+            <img src="images/public/back.png" alt="后退">
+        </button>
+        <h1>注册</h1>
+    </header>
+    <div id="middle">
+        <form class="reg">
+            <input type="text" name="user" placeholder="手机/邮箱：" class="user">
+            <input type="password" name="pwd" placeholder="密码：（请输入6位以上密码）" class="pwd">
+            <input type="password" name="rpwd" placeholder="确认密码：" class="rpwd">
+            <div>
+                <input type="text" name="ycode" placeholder="验证码：">
+                <img src="images/login/ycode.png" alt="验证码">
+            </div>
+            <div>
+                <div class="checkbox">
+                    <input type="checkbox" name="xy">
+                </div>
+                <span>注册即视您已同意<a href="javascript:void(0)">服务协定</a>和<a href="javascript:void(0)">隐私条款</a></span>
+            </div>
+            <input type="submit" value="注册" class="sub">
+        </form>
+        <a href="login.html">快速登录</a>
+    </div>
+    <script src="js/public.js"></script>
+    <!-- <script src="js/reg.js"></script> -->
+</body>
+
+</html>

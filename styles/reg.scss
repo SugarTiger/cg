@@ -1,0 +1,99 @@
+@mixin border-radius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -ms-border-radius: $size;
+    -o-border-radius: $size;
+    border-radius: $size;
+}
+
+html {
+    body {
+        #middle {
+            width: 7.2rem;
+            height: 16.9rem;
+            background-color: #f6f4f4;
+            .reg {
+                width: 4.42rem;
+                margin: 0 auto;
+                padding-top: 0.45rem;
+                overflow: hidden;
+                input {
+                    float: left;
+                    border: 0.01rem solid #d2d2d2;
+                    width: 4.3rem;
+                    height: 0.58rem;
+                    line-height: 0.58rem;
+                    font-size: 0.24rem;
+                    color: #b8b6b6;
+                    background-color: #fff;
+                    margin-bottom: 0.24rem;
+                }
+                >div:first-of-type {
+                    float: left;
+                    width: 4.4rem;
+                    height: 0.63rem;
+                    overflow: hidden;
+                    >input {
+                        width: 2.63rem;
+                    }
+                    >img {
+                        float: right;
+                        width: 1.56rem;
+                    }
+                }
+                >div:last-of-type{
+                    float: left;
+                    width: 4.38rem;
+                    margin: auto;
+                    margin-top: 0.26rem;
+                    overflow: hidden;
+                    position: relative;
+                    .checkbox{
+                        position: absolute;
+                        top: 0.03rem;
+                        left: 0;
+                        width: 0.21rem;
+                        height: 0.21rem;
+                        background: url('../images//reg/checkbox1.png') no-repeat;
+                        background-size: 0.21rem;
+                        z-index: 99;
+                        >input{
+                            display: none;
+                        }
+                    }
+                    .checked{
+                        background-image: url('../images/reg/checkbox2.png');
+                    }
+                    >span{
+                        float: left;
+                        margin-left: 0.32rem;
+                        color: #b1afaf;
+                        font-size: 0.2rem;
+                        >a{
+                            color: #434242;
+                            font-size: 0.2rem;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .sub {
+                    padding-left: 0;
+                    width: 4.38rem;
+                    background-color: #e8c93b;
+                    color: #fff;
+                    font-size: 0.28rem;
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.11rem;
+                }
+            }
+            >a {
+                display: block;
+                width: 4.4rem;
+                color: #757474;
+                font-size: 0.2rem;
+                margin: 0 auto;
+                text-align: right;
+            }
+        }
+    }
+}
