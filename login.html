@@ -22,7 +22,7 @@
             <input type="text" name="user" placeholder="会员号：" class="user">
             <input type="password" name="pwd" placeholder="密码：" class="pwd">
             <div>
-                <input type="text" name="ycode" placeholder="验证码：" class="ycode">
+                <input type="text" name="ycode" placeholder="验证码：" maxlength="4" class="ycode">
                 <img src="images/login/ycode.png" alt="验证码" class="code_img">
             </div>
             <input type="submit" value="登录" class="sub">
@@ -39,7 +39,9 @@
         <h3>其它方式登陆</h3>
     </div>
     <script src="js/public.js"></script>
-    <!-- <script src="js/login.js"></script> -->
+    <script src="js/ajax.fn.js"></script>
+    <script src="js/md5.min.js"></script>
+     <script src="js/login.js"></script> 
 </body>
 
 </html>
