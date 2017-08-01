@@ -6,7 +6,7 @@ html body #middle {
 html body #middle .site {
   width: 100%;
   border-bottom: 0.03rem solid orange;
-  border-image: url("../images/order/border_bg2.png") 7 repeat stretch;
+  border-image: url("../images/order/border_bg.png") 7 repeat stretch;
   display: -webkit-flex;
   display: -moz-flex;
   display: flex;

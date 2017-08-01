@@ -37,7 +37,7 @@ html {
             .site {
                 width: 100%;
                 border-bottom: 0.03rem solid orange;
-                border-image: url('../images/order/border_bg2.png') 7 repeat stretch;
+                border-image: url('../images/order/border_bg.png') 7 repeat stretch;
                 @include display;
                 @include justify-content(space-between);
                 >div {
