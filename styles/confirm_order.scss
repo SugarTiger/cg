@@ -1,0 +1,78 @@
+@mixin border-radius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -ms-border-radius: $size;
+    -o-border-radius: $size;
+    border-radius: $size;
+}
+
+@mixin display {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+
+@mixin justify-content($a) {
+    -webkit-justify-content: $a;
+    -moz-justify-content: $a;
+    justify-content: $a;
+}
+
+@mixin flex-flow($a, $b) {
+    -webkit-flex-flow: $a $b;
+    -moz-flex-flow: $a $b;
+    flex-flow: $a $b;
+}
+@mixin align-content($a) {
+    -webkit-align-content: $a;
+    -moz-align-content: $a;
+    align-content: $a;
+}
+
+html {
+    body {
+        #middle {
+            width: 7.2rem;
+            background-color: #fff;
+            .site {
+                width: 100%;
+                border-bottom: 0.03rem solid orange;
+                border-image: url('../images/order/border_bg2.png') 7 repeat stretch;
+                @include display;
+                @include justify-content(space-between);
+                >div {
+                    padding-left: 0.5rem;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    background: url('../images/order/place.png') no-repeat center left;
+                    background-size: 0.17rem 0.25rem;
+                    background-position-x: 0.16rem;
+                    -webkit-flex: 1;
+                    -moz-flex: 1;
+                    flex: 1;
+                    @include display;
+                    @include flex-flow(row,wrap);
+                    @include justify-content(space-between);
+                    @include align-content(center);
+                    >h3 {
+                        color: #474646;
+                        line-height: 0.33rem;
+                        font-weight: normal;
+                        font-size: 0.2rem;
+                    }
+                }
+                >a {
+                    -webkit-flex: 0 0 0.27rem;
+                    -moz-flex: 0 0 0.27rem;
+                    flex: 0 0 0.27rem;
+                    padding-left: 0.06rem;
+                    >img {
+                        display: block;
+                        width: 0.27rem;
+                    }
+                }
+            }
+        }
+    }
+}
